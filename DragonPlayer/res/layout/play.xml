@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/playerlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true" >
+
+
+    <RelativeLayout
+        android:id="@+id/player_controler"
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:id="@+id/player_control"
+            android:layout_width="fill_parent"
+            android:layout_height="37.7dip"
+            android:layout_marginTop="1dip"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/play_pause"
+                android:layout_width="44dip"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:src="@drawable/vod_play_play"
+                android:contentDescription="play/pause button" />
+
+
+            <TextView
+                android:id="@+id/playBitrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                
+                android:layout_marginRight="19dp"
+                android:layout_toLeftOf="@+id/play_pause" />
+
+            <TextView
+                android:id="@+id/playfps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/playBitrate"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/play_pause" />
+
+            <TextView
+                android:id="@+id/cur_playtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/playBitrate"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/playfps" />
+
+
+            <TextView
+                android:id="@+id/cur_playName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/playBitrate"
+                android:layout_marginRight="20dp"              
+                android:layout_toRightOf="@id/cur_playtime"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/player_control"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_beginTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="15dip"
+                android:text="@string/vod_beginTime"
+                android:textColor="@color/white"
+                android:textSize="9.5sp" />
+ 
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <SeekBar
+                    android:id="@+id/playerView_seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:max="1000"
+                    android:maxHeight="40dp"
+                    android:minHeight="40dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_horizontal"
+                    android:thumb="@drawable/play_bar_point"                    
+                    android:thumbOffset="0dip" />
+ 			</LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:layout_marginTop="15dip"
+                android:text="@string/vod_endTime"
+                android:textColor="@color/white"
+                android:textSize="9.5dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buffer_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent" >
+
+        <ProgressBar
+            android:id="@+id/pb_buffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/media_process_buffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pb_buffer"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

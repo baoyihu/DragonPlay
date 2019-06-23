@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="DragonPlayer" default="release">
+    
+    <tstamp>
+		<format property="app.version.code" pattern="yyMMddHHmm"/>
+	</tstamp>
+    <property environment="env" />
+    <property name="sdk.dir" value="${env.ANDROID_SDK}"/>
+    <property name="key.store" value="${env.ANDROID_SDK}/aeo_android.keystore"/>
+    <property name="key.alias" value="aeo_android.keystore"/>
+    <property name="key.store.password" value="123456"/>
+    <property name="key.alias.password" value="123456"/>
+    <property file="local.properties" />
+    <property file="ant.properties" />
+    <loadproperties srcFile="project.properties" />
+
+    <!-- quick check on sdk.dir -->
+    <fail
+            message="sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through the ANDROID_SDK environment variable."
+            unless="sdk.dir"
+    />
+
+
+    <import file="custom_rules.xml" optional="true" />
+
+    <import file="${sdk.dir}/tools/ant/build.xml" />
+	
+	<!-- quick check on sdk.dir 
+    <fail
+            message="sdk.dir is ${env.ANDROID_SDK}"
+    />-->
+
+</project>

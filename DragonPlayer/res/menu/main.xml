@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.po.MainActivity" >
+
+       <item
+        android:id="@+id/action_loadfromlog"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_loadfromlog"/>
+       
+   <item
+        android:id="@+id/action_loadfromhimovie_dash"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_loadfromhimovie_dash"/>
+
+      <item
+        android:id="@+id/action_loadfromhimovie_hls"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_loadfromhimovie_hls"/>
+      
+   <item
+        android:id="@+id/action_loadfromlocalserver_dash"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_loadfromlocalservere_dash"/>
+   
+      <item
+        android:id="@+id/action_loadfromlocalserver_hls"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_loadfromlocalservere_hls"/>   
+        
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+   
+
+</menu>

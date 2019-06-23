@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DragonPlayer</string>
+    <string name="vod_beginTime">00:00:00</string>
+    <string name="vod_endTime">00:00:00</string>
+	<string name="autoTest_switch_bitrate">切换码率:%1$s</string>
+	<string name="autoTest_switch_subtitle">切换字幕:%1$s</string>
+	<string name="autoTest_switch_audio">切换音轨:%1$s</string>	
+	<string name="menu_switch_Bitrate">切换码率</string>
+	<string name="menu_switch_AudioTrack">切换音轨</string>	
+	<string name="menu_switch_Subtitle">切换字幕</string>
+	<string name="menu_switch_CC">切换CC字幕</string>
+	<string name="description_ImageButton"></string>
+	<string name="action_settings">Settings</string>
+	<string name="action_loadfromlog">从日志文件加载URL</string>
+	<string name="action_loadfromhimovie_dash">从华为视频获取DASH</string>
+	<string name="action_loadfromhimovie_hls">从华为视频获取HLS</string>
+	<string name="action_loadfromlocalservere_dash">从本地服务器获取DASH</string>
+	<string name="action_loadfromlocalservere_hls">从本地服务器获取HLS</string>
+	<string name="play_menu_switchhint">显示/隐藏CPU信息</string>
+	
+	
+</resources>

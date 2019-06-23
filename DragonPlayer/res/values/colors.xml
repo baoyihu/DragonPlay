@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#FFFFFFFF</color>
+	<color name="black">#FF000000</color>
+	<color name="blue">#FF0000FF</color>
+	<color name="grey">#FF888888</color>
+	<color name="transparent">#00000000</color>
+	<color name="popcolor">#EFEFEF</color>
+	<color name="search_noresult">#ed6c00</color>
+	<color name="pink">#CD00CD</color>
+	<color name="actionbar_title_color">#224894</color>
+</resources>
